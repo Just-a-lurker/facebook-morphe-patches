@@ -5,7 +5,7 @@ patches {
     about {
         name = "Facebook Morphe Patches"
         description = "Ad-removal patches for Facebook"
-        source = "git@github.com:OWNER/facebook-morphe-patches.git"
+        source = "git@github.com:Just-a-lurker/facebook-morphe-patches.git"
         author = "Facebook Morphe Patches contributors"
         contact = "na"
         website = "na"

@@ -10,9 +10,9 @@ Patches for apps I like.
 
 ### How to use these patches
 
-Click the button below, or manually add this repo url to Morphe Manager: https://github.com/OWNER/facebook-morphe-patches
+Click the button below, or manually add this repo url to Morphe Manager: https://github.com/Just-a-lurker/facebook-morphe-patches
 
-<a href="https://morphe.software/add-source?github=OWNER/facebook-morphe-patches">
+<a href="https://morphe.software/add-source?github=Just-a-lurker/facebook-morphe-patches">
   <img src=".github/assets/add-to-morphe.svg" alt="Add to Morphe" height="48">
 </a>
 
