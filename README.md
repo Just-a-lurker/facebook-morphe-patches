@@ -38,12 +38,34 @@ Then open Facebook on Morphe Manager's **Apps** tab, tap **Patch**, and install 
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
+> **[v1.0.0](https://github.com/Just-a-lurker/facebook-morphe-patches/releases/tag/v1.0.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;12 patches total
+<details open>
+<summary>📦 Facebook&nbsp;&nbsp;•&nbsp;&nbsp;12 patches</summary>
+<br>
 
-<!-- Do not modify this section by hand. The patch list is generated when release.yml creates a new release.
-     
-     If you wish for the patches list to be collapsed, then remove the word 'EXPANDED' from the comment tag above. -->
+**Package name:** `com.facebook.katana`
 
-#### A list of your patches will automatically be shown here after your first patches release is created.
+**🎯 Supported versions:**
+
+| 🧪&nbsp;585.0.0.47.54 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Block Instant Games ads](#block-instant-games-ads) | Games you play inside Facebook show no ads. Rewarded ads give no reward. |  |
+| [Block ad telemetry](#block-ad-telemetry) | Stops ad screenshot detection, ad install attribution and several ways Facebook sends your advertising ID. |  |
+| [Block background ad prefetch](#block-background-ad-prefetch) | Stops the background jobs that download ads and the ad-ranking model before you see them. |  |
+| [Disable Audience Network](#disable-audience-network) | Stops Facebook serving its ads inside other apps on your phone. |  |
+| [Hide affiliate product links](#hide-affiliate-product-links) | Removes affiliate shopping cards from reels, feed posts and comments, Shop now cards on reels, and the shop banner on a profile opened from one. |  |
+| [Hide sponsored Marketplace listings](#hide-sponsored-marketplace-listings) | Removes ads and boosted listings from Marketplace's feed and search results. |  |
+| [Hide sponsored posts](#hide-sponsored-posts) | Removes sponsored and promoted posts from the news feed, including ads swapped in later. |  |
+| [Hide sponsored profile posts](#hide-sponsored-profile-posts) | Removes the ads between posts on someone's profile or a Page. |  |
+| [Hide sponsored reels](#hide-sponsored-reels) | Removes ads from Reels and Watch, including product banners over reels and mid-roll ads. |  |
+| [Hide sponsored search results](#hide-sponsored-search-results) | Removes the ads from Facebook's search results. |  |
+| [Hide sponsored stories](#hide-sponsored-stories) | Removes ad cards from the story viewer. |  |
+| [Install beside Meta's apps](#install-beside-meta-s-apps) | Lets stock Messenger, Facebook Lite, Business Suite and Workplace install and update beside this re-signed Facebook. Without it, Android refuses one of them because they share two permissions with Facebook. Works as soon as you patch it in, with no switch. |  |
+
+</details>
 
 <!-- PATCHES_END -->
 
