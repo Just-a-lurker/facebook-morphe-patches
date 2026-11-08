@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "patches": [
     {
       "name": "Block Instant Games ads",
@@ -60,6 +60,33 @@
       "name": "Block background ad prefetch",
       "description": "Stops the background jobs that download ads and the ad-ranking model before you see them.",
       "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.katana",
+          "name": "Facebook",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1877F2",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "585.0.0.47.54",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Dark mode on tablets",
+      "description": "Turns Facebook's dark mode on for tablets, where its Settings page has no Dark mode row. Phones keep Facebook's own light or dark choice. Off by default: pick it in Morphe Manager before patching. Works as soon as you patch it in, with no switch.",
+      "default": false,
       "category": null,
       "compatiblePackages": [
         {

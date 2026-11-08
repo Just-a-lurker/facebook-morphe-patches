@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/Just-a-lurker/facebook-morphe-patches/compare/v1.0.2...v1.1.0) (2026-11-08)
+
+### ✨ New Features
+
+* add opt-in tablet dark mode patch ([861cd66](https://github.com/Just-a-lurker/facebook-morphe-patches/commit/861cd66c5f2daeb35e9f42a5e3faf35e4ee645da))
+
 ## [1.0.2](https://github.com/Just-a-lurker/facebook-morphe-patches/compare/v1.0.1...v1.0.2) (2026-11-08)
 
 ### 🐛 Bug Fixes
