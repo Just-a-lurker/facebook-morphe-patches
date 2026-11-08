@@ -23,7 +23,7 @@ Two Gradle modules, wired by the `app.morphe.patches` settings plugin (`settings
   - `util/PatchListGenerator.kt`: template code that writes `patches-list.json` from the built `.mpp`.
 - `extensions/extension/`: Java code (package `app.fbpatches.extension`) compiled into `extensions/extension.mpe` and merged into the patched app. Runtime logic is in `facebook/ads/*.java`. Injected smali calls its static methods, and the descriptor must match exactly, e.g. `Lapp/fbpatches/extension/facebook/ads/FeedAds;->shouldHide(Ljava/lang/Object;)Z`. Some extension methods are stubs whose bodies the patch fills (e.g. `SearchAds.isModule`, `ReelsAds.itemStory`). Every hook fails open: on any error, Facebook's own behavior.
 
-Most of the ad patches are ported from Hushfacebook (GPL-3.0, same Facebook version). Keep the "Forked from" headers and the NOTICE credits.
+Most of the ad patches are inspired by Hushfacebook's work (GPL-3.0, same Facebook version). Keep the "Forked from" headers and the NOTICE credits.
 
 Typical flow: find an anchor, hook its method from a patch, then put the runtime logic in a static method in the extension.
 

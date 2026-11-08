@@ -24,10 +24,10 @@ provided that such references:
 Third-party code
 ================
 
-The ad-removal patches and their extension code are ported from Hushfacebook
-and the projects it builds on. All are licensed under the GNU General Public
-License v3.0. Each ported file names its source in its header and says how it
-was modified.
+The ad-removal patches and their extension code are inspired by the work of
+Hushfacebook and the projects it builds on. All are licensed under the GNU
+General Public License v3.0. Each file names its source in its header and says
+how it was modified.
 
   Hushfacebook                https://github.com/SysAdminDoc/Hushfacebook
   Hushfeed                    https://github.com/SysAdminDoc/hushfeed
