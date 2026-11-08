@@ -1,3 +1,9 @@
+## [1.0.2-dev.1](https://github.com/Just-a-lurker/facebook-morphe-patches/compare/v1.0.1...v1.0.2-dev.1) (2026-11-08)
+
+### 🐛 Bug Fixes
+
+* stop marking the Facebook target experimental ([643175a](https://github.com/Just-a-lurker/facebook-morphe-patches/commit/643175a62bf08daf3b8f5533e9815aea1798c0d3))
+
 ## [1.0.1](https://github.com/Just-a-lurker/facebook-morphe-patches/compare/v1.0.0...v1.0.1) (2026-11-08)
 
 ### 🐛 Bug Fixes
