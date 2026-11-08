@@ -3,7 +3,7 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## What this is
-Morphe patches for Facebook (`com.facebook.katana`), built on the Morphe patches template. The output is a `.mpp` patch bundle, applied with Morphe Manager or Morphe Desktop. The goal is narrow: remove ads and keep Facebook stable, including installing beside Meta's stock apps.
+Morphe patches for Facebook (`com.facebook.katana`), built on the Morphe patches template. The output is a `.mpp` patch bundle, applied with Morphe Manager or Morphe Desktop. The goal is narrow: remove ads, bring dark mode to tablets that Facebook leaves without it, and keep Facebook stable, including installing beside Meta's stock apps.
 
 ## Commands
 - Build the bundle: `./gradlew buildAndroid` (`gradlew.bat buildAndroid` on Windows). Output: `patches/build/libs/patches-*.mpp`.
@@ -18,6 +18,7 @@ Two Gradle modules, wired by the `app.morphe.patches` settings plugin (`settings
 - `patches/`: Kotlin patch definitions (package `app.fbpatches.patches`).
   - `facebook/ads/<surface>/`: one user-visible `bytecodePatch(name=…, default=true)` per ad surface (`feed`, `profile`, `stories`, `reels`, `search`, `marketplace`, `games`, `affiliate`, `prefetch`, `telemetry`, `audiencenetwork`), each with its own fingerprints/anchors. Find targets by stable strings, kept class names (`GraphQLFeedUnitEdge`, `GraphQLStory`, ...), GraphQL field keys (`treeFieldKey`) or method shape, never by obfuscated names. Most patches fail with a `PatchException` when an anchor is missing; a few optional hooks only `patchLog.warning`.
   - `facebook/coexist/`: `SharedPermissions.kt` renames the two signature permissions Facebook shares with Messenger (`com.facebook.permission.prod.FB_APP_COMMUNICATION`, `com.facebook.receiver.permission.ACCESS`) to `app.justalurker.*` in `AndroidManifest.xml`, and routes the three code literals through the extension so Facebook's own guarded broadcasts still work. `InstallBesideMetaAppsPatch.kt` is the default-on patch (`resourcePatch` + `bytecodePatch`) that runs it.
+  - `facebook/theme/`: `ForceDarkModePatch.kt` hooks every boolean return of Facebook's dark mode controller (`fb.e2e.enable_dark_mode`, reads `ThemePreferences$State`) through `DarkMode.answer(Z)Z`. On a tablet (smallest width ≥ 600dp) a light answer is turned dark; on phones Facebook's own answer is kept. Ported from Hushfacebook's `Force dark mode`; Hush's runtime switch is replaced by the tablet check so the patch needs no settings. It is the one **opt-in** patch (`default = false`), because selecting it overrides a tablet's light choice.
   - `facebook/shared/`: `Support.kt` (register helpers, `handleTargets`, `neuterOrReason`, `freeLocalsAt`), `StoryModels.kt` (GraphQL model accessors, the `fbpatchesIsSponsored` helper added to `GraphQLStory`), `ExtensionPatch.kt` (`extensionPatch`, which does `extendWith("extensions/extension.mpe")`; patches that call the extension `dependsOn` it).
   - `util/RegisterLiveness.kt`: control flow and register liveness, used to pick free registers mid-method.
   - `shared/Constants.kt`: `COMPATIBILITY_FACEBOOK` — package name, APK file type, target version. Target `585.0.0.47.54` is non-experimental as of v1.0.2.
@@ -29,8 +30,8 @@ Most ad patches are inspired by Hushfacebook's work (GPL-3.0, same Facebook vers
 Typical flow: find an anchor, hook its method from a patch, then put the runtime logic in a static method in the extension.
 
 ## Current state (2026-11-08)
-- 12 default-on patches with no settings, targeting Facebook **585.0.0.47.54**, APKM (Android 11+).
-- All 12 apply to the genuine arm64 480dpi APKM. The patched build was verified: `result.json` success, 12/12 applied, manifest 52 permission mentions renamed to `app.justalurker.*` with 0 stock mentions left, and 6 dex loads routed through `SharedPermissions.name`.
+- 13 patches targeting Facebook **585.0.0.47.54**, APKM (Android 11+): 12 default-on ad/coexist patches plus the opt-in **Dark mode on tablets** patch.
+- All 13 apply to the genuine arm64 480dpi APKM. The patched build was verified: `result.json` success, 13/13 applied, manifest 52 permission mentions renamed to `app.justalurker.*` with 0 stock mentions left, 6 dex loads routed through `SharedPermissions.name`, and 3 dark mode controller returns routed through `DarkMode.answer`.
 - The user installed the patched build beside **stock Messenger** and confirmed it works. `Install beside Meta's apps` is what makes stock Messenger keep ownership of the shared permissions while the re-signed Facebook declares its own.
 - Releases: **v1.0.2 is Latest and signed**; v1.0.1 is signed; v1.0.0 is unsigned. `morphe-signing.pub` is committed and `MORPHE_SIGNING_KEY` is set as a repo secret. Keep `morphe-signing.key` backed up and out of git.
 - GitHub Actions is enabled and push-triggered releases work. A push to `dev` creates a prerelease; merging `dev` to `main` creates the stable release. "Allow GitHub Actions to create and approve pull requests" is enabled.
