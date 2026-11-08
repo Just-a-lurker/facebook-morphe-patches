@@ -19,3 +19,21 @@ provided that such references:
 - Are accurate, factual, and non-misleading;
 - Do not suggest authorship by the Morphe project; and
 - Appear only in a secondary or descriptive context, not as part of the product or project name.
+
+
+Third-party code
+================
+
+The ad-removal patches and their extension code are ported from Hushfacebook
+and the projects it builds on. All are licensed under the GNU General Public
+License v3.0. Each ported file names its source in its header and says how it
+was modified.
+
+  Hushfacebook                https://github.com/SysAdminDoc/Hushfacebook
+  Hushfeed                    https://github.com/SysAdminDoc/hushfeed
+  morphe-patches (Andrew's)   https://github.com/andrewliang25/morphe-patches
+                              Copyright 2026 Andrew Liang
+  FroggoMorphePatches         https://github.com/SapitoSucio/FroggoMorphePatches
+  tiktok-patches-for-morphe   https://github.com/icysymmetra/tiktok-patches-for-morphe
+  morphe-patches              https://github.com/MorpheApp/morphe-patches
+  ReVanced                    https://gitlab.com/ReVanced/revanced-patches

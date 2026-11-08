@@ -1,12 +1,18 @@
-# 👋🧩 Morphe Patches template
+# 🧩 Facebook Morphe Patches
 
-Template repository for Morphe Patches.
+Morphe patches for the Facebook Android app (`com.facebook.katana`).
 
 ## ❓ About
 
-Patches for apps I like.
+Ad-removal patches for Facebook: sponsored posts in the feed and on profiles, ads in Stories,
+Reels and Watch (including mid-roll ads and banners), search results, Marketplace and Instant
+Games, affiliate shop cards, plus background ad prefetching, ad telemetry and Audience Network.
 
-<!-- TODO: Update this about section with a brief introduction/summary about this repo and what it offers. -->
+### Which APK to use
+
+Use the Facebook 585.0.0.47.54 `.apkm` bundle labelled **Android 11+** on APKMirror (for example
+the arm64-v8a build). The Android 9+ bundle keeps almost all of Facebook's code in a compressed
+store that the patcher can't read, so every patch fails on it.
 
 ### How to use these patches
 

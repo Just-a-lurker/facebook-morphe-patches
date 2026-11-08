@@ -8,12 +8,11 @@ object Constants {
     val COMPATIBILITY_FACEBOOK = Compatibility(
         name = "Facebook",
         packageName = "com.facebook.katana",
-        // TODO: Verify against the file type listed on APKMirror for the chosen version.
-        apkFileType = ApkFileType.APK,
+        // APKMirror ships this version as an .apkm bundle.
+        apkFileType = ApkFileType.APKM,
         appIconColor = 0x1877F2,
         targets = listOf(
-            // TODO: Replace with the exact Facebook version used for development.
-            AppTarget(version = null, isExperimental = true)
+            AppTarget(version = "585.0.0.47.54", isExperimental = true)
         )
     )
 }

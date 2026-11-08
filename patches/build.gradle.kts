@@ -1,14 +1,13 @@
 group = "app.fbpatches"
 
 patches {
-    // TODO: Update this section with your project details.
     about {
         name = "Facebook Morphe Patches"
         description = "Ad-removal patches for Facebook"
-        source = "git@github.com:Just-a-lurker/facebook-morphe-patches.git"
+        source = "https://github.com/Just-a-lurker/facebook-morphe-patches.git"
         author = "Facebook Morphe Patches contributors"
-        contact = "na"
-        website = "na"
+        contact = "https://github.com/Just-a-lurker/facebook-morphe-patches/issues"
+        website = "https://github.com/Just-a-lurker/facebook-morphe-patches"
         license = "GPLv3"
     }
 }
