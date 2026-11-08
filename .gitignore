@@ -119,6 +119,12 @@ gradle-app.setting
 
 # Potentially copyrighted test APK
 *.apk
+*.apkm
+apks/
+
+# Local reverse-engineering tools
+jadx-*/
+apktool.bat
 
 # Ignore vscode config
 .vscode/
@@ -132,3 +138,9 @@ node_modules/
 # Ignore IDEA files
 .idea/
 local.properties
+
+# Local-only notes and the upstream project's README
+README__Hush.md
+handoff.md
+extra.md
+CONTRIBUTING.md
