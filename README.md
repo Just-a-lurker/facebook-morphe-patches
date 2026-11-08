@@ -38,7 +38,7 @@ Then open Facebook on Morphe Manager's **Apps** tab, tap **Patch**, and install 
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.1](https://github.com/Just-a-lurker/facebook-morphe-patches/releases/tag/v1.0.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;12 patches total
+> **[v1.0.2-dev.1](https://github.com/Just-a-lurker/facebook-morphe-patches/releases/tag/v1.0.2-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;12 patches total
 <details open>
 <summary>📦 Facebook&nbsp;&nbsp;•&nbsp;&nbsp;12 patches</summary>
 <br>
@@ -47,7 +47,7 @@ Then open Facebook on Morphe Manager's **Apps** tab, tap **Patch**, and install 
 
 **🎯 Supported versions:**
 
-| 🧪&nbsp;585.0.0.47.54 |
+| 585.0.0.47.54 |
 | :---: |
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
