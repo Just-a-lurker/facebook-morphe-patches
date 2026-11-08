@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/Just-a-lurker/facebook-morphe-patches/compare/v1.0.0...v1.0.1) (2026-11-08)
+
+### 🐛 Bug Fixes
+
+* sign release bundles with the project key ([215f037](https://github.com/Just-a-lurker/facebook-morphe-patches/commit/215f03738e2e108d1eea60b02e9adb53d6687de7))
+
 ## 1.0.0 (2026-11-08)
 
 ### ✨ New Features
