@@ -132,8 +132,9 @@ apktool.bat
 # Dependency directories
 node_modules/
 
-# gradle properties, due to Github token
-/gradle.properties
+# The project gradle.properties is tracked and holds only the release version.
+# Keep GitHub Packages credentials in the Gradle user home, never here.
+# (No ignore entry: the file is intentionally tracked.)
 
 # Ignore IDEA files
 .idea/
@@ -143,4 +144,3 @@ local.properties
 README__Hush.md
 handoff.md
 extra.md
-CONTRIBUTING.md

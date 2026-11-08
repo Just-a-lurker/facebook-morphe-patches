@@ -35,6 +35,9 @@ Click the button below, or manually add this repo url to Morphe Manager: https:/
 
 Then open Facebook on Morphe Manager's **Apps** tab, tap **Patch**, and install the result.
 
+Releases are signed. Morphe Manager remembers the signing key and refuses a bundle that was
+changed or swapped after publication.
+
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
@@ -75,6 +78,9 @@ Then open Facebook on Morphe Manager's **Apps** tab, tap **Patch**, and install 
 - The built patches `.mpp` file is found in `patches/build/libs/patches-*.mpp`
 - Patch the mpp file using [Morphe-Desktop](https://github.com/MorpheApp/morphe-desktop)
   like any other patch bundle.
+- Gradle resolves the Morphe plugin from GitHub Packages. Put a classic PAT with `read:packages`
+  in your Gradle user home (`~/.gradle/gradle.properties`), not in this repository's
+  `gradle.properties`, which is tracked.
 
 See the [Morphe documentation](https://github.com/MorpheApp/morphe-documentation) for more information.
 
