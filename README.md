@@ -1,21 +1,27 @@
 # 🧩 Facebook Morphe Patches
 
-Morphe patches for the Facebook Android app (`com.facebook.katana`) that remove every ad.
+Morphe patches for the Facebook Android app (`com.facebook.katana`) that remove every ad and turn
+dark mode on for tablets.
 
 ## ❓ About
 
 Ad-removal patches for Facebook: sponsored posts in the feed and on profiles, ads in Stories,
 Reels and Watch (including mid-roll ads and banners), search results, Marketplace and Instant
 Games, affiliate shop cards, plus background ad prefetching, ad telemetry and Audience Network.
+A tablet dark mode patch is included, off by default, because Facebook hides its own Dark mode setting
+on tablets.
 
-### Scope: removing ads and stability, nothing else
+### Scope: removing ads, tablet dark mode, and stability
 
-This repo is deliberately not feature-rich. It does exactly two things: remove every ad, and
-keep Facebook working reliably — including being installable alongside Meta's own Messenger.
-No downloads, themes, chat tweaks, navigation changes or other extras: if it isn't about
-removing ads or keeping the app stable, it is out of scope.
+This repo is deliberately not feature-rich. It does three things: remove every ad, bring dark mode
+to tablets that Facebook leaves without it, and keep Facebook working reliably — including being
+installable alongside Meta's own Messenger. No downloads, chat tweaks, navigation changes or other
+extras: if it isn't about removing ads, tablet dark mode, or keeping the app stable, it is out of
+scope.
 
-All patches are on by default and have no settings. They target Facebook 585.0.0.47.54. The
+All patches except **Dark mode on tablets** are on by default; the dark mode patch is opt-in
+because it overrides Facebook's own light choice on a tablet. Pick it in Morphe Manager before
+patching. No patch has runtime settings. They target Facebook 585.0.0.47.54. The
 approach is inspired by [Hushfacebook](https://github.com/SysAdminDoc/Hushfacebook)'s work;
 [NOTICE](NOTICE) credits the upstream projects.
 

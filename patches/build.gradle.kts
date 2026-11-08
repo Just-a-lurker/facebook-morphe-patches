@@ -3,7 +3,7 @@ group = "app.fbpatches"
 patches {
     about {
         name = "Facebook Morphe Patches"
-        description = "Ad-removal patches for Facebook"
+        description = "Ad-removal and tablet dark mode patches for Facebook"
         source = "https://github.com/Just-a-lurker/facebook-morphe-patches.git"
         author = "Facebook Morphe Patches contributors"
         contact = "https://github.com/Just-a-lurker/facebook-morphe-patches/issues"
