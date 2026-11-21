@@ -1,8 +1,8 @@
 {
-  "created_at": "2026-11-21T13:03:30",
-  "description": "## [1.2.0-dev.1](https://github.com/Just-a-lurker/facebook-morphe-patches/compare/v1.1.1...v1.2.0-dev.1) (2026-11-21)\n\n### ✨ New Features\n\n* add a Follow the system theme option to Dark mode on tablets ([8827b72](https://github.com/Just-a-lurker/facebook-morphe-patches/commit/8827b72bf9e8dc6e3b1f245ffdf7613b6254f3f5))",
-  "download_url": "https://github.com/Just-a-lurker/facebook-morphe-patches/releases/download/v1.2.0-dev.1/patches-1.2.0-dev.1.mpp",
+  "created_at": "2026-11-21T13:05:59",
+  "description": "## [1.2.0](https://github.com/Just-a-lurker/facebook-morphe-patches/compare/v1.1.1...v1.2.0) (2026-11-21)\n\n### ✨ New Features\n\n* add a Follow the system theme option to Dark mode on tablets ([8827b72](https://github.com/Just-a-lurker/facebook-morphe-patches/commit/8827b72bf9e8dc6e3b1f245ffdf7613b6254f3f5))",
+  "download_url": "https://github.com/Just-a-lurker/facebook-morphe-patches/releases/download/v1.2.0/patches-1.2.0.mpp",
   "signature_download_url": "",
-  "version": "1.2.0-dev.1",
+  "version": "1.2.0",
   "public_key": "nH52EIEoqyxYKRGo6YRXhkUYP+FQHYcmJ2aW3wHEDC0="
 }
