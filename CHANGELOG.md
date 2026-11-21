@@ -1,3 +1,9 @@
+## [1.2.0-dev.1](https://github.com/Just-a-lurker/facebook-morphe-patches/compare/v1.1.1...v1.2.0-dev.1) (2026-11-21)
+
+### ✨ New Features
+
+* add a Follow the system theme option to Dark mode on tablets ([8827b72](https://github.com/Just-a-lurker/facebook-morphe-patches/commit/8827b72bf9e8dc6e3b1f245ffdf7613b6254f3f5))
+
 ## [1.1.1](https://github.com/Just-a-lurker/facebook-morphe-patches/compare/v1.1.0...v1.1.1) (2026-11-21)
 
 ### 🐛 Bug Fixes
