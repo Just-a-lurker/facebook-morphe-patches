@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/Just-a-lurker/facebook-morphe-patches/compare/v1.1.0...v1.1.1) (2026-11-21)
+
+### 🐛 Bug Fixes
+
+* filter the Reels loader's page appends and edge swap ([8b49a7f](https://github.com/Just-a-lurker/facebook-morphe-patches/commit/8b49a7f814fdd1b21eca23171a67e91bd267f235))
+
 ## [1.1.1-dev.1](https://github.com/Just-a-lurker/facebook-morphe-patches/compare/v1.1.0...v1.1.1-dev.1) (2026-11-21)
 
 ### 🐛 Bug Fixes
